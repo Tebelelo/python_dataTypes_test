@@ -6,6 +6,7 @@ def int_division():
     Return:
     - The result of the division (integer).
     """
+    return 7//2
     pass
 
 
@@ -17,6 +18,7 @@ def float_multiplication():
     Return:
     - The result of the multiplication (float).
     """
+    return 3.0 * 2
     pass
 
 
@@ -25,9 +27,13 @@ def combine_operations():
     Task:
     - Add the result of integer division and multiplication.
     
-    Return:
+    Return:nested['b'] = [nested['b'][0],nested['b'][1]]
+    nested['b'].append(6)
+    return nested
     - The combined result (float).
     """
+    result = int_division() + float_multiplication()
+    return result
     pass
 
 
@@ -39,6 +45,9 @@ def extract_word():
     Return:
     - The extracted word ('awesome').
     """
+    string1 = 'Python is awesome!'
+    if 'awesome' in string1:
+        return 'awesome'
     pass
 
 
@@ -50,6 +59,8 @@ def to_lowercase():
     Return:
     - The lowercase version of the string.
     """
+    string1 = 'Python is awesome!'
+    return string1.lower()
     pass
 
 
@@ -61,6 +72,8 @@ def count_o():
     Return:
     - The count of the letter 'o'.
     """
+    string1 = 'Python is awesome!'
+    return string1.count('o')
     pass
 
 
@@ -72,4 +85,7 @@ def evaluate_boolean():
     Return:
     - The boolean result of the expression.
     """
+    exp1 = not (5 > 3)
+    exp2 = 10 == 5 * 2
+    return exp1 and exp2
     pass
